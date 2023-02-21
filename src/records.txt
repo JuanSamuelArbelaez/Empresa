@@ -1,39 +1,71 @@
-Moda/ctg
--617C7/cd
--Seccion_Ropa/dsc
--Hombre/ctg
---0FA98/cd
---Moda_Hombre/dsc
---Short/ctg
----5018B/cd
----Shorts_Hombre/dsc
----ShortAloha/pct
-----19990/prc
-----01F32/cd
-----Short_Aloha_Hombre_Patron_Floral/dsc
-----null/url
----ShortMadim/pct
-----25200/prc
-----0D2A1/cd
-----Short_Madim_Verde_Hombre_Bolsillos/dsc
-----null/url
---Camisa/ctg
----61AC8/cd
----Camisas_para_Hombre/dsc
----PoloClassic/pct
-----24990/prc
-----71BA1/cd
-----Camisa_Polo_Clasica/dsc
-----null/url
--Mujer/ctg
---90A8C/cd
---Moda_Mujer/dsc
---Blusa/ctg
----A810B/cd
----Blusas_Mujer/dsc
----BlusaMaverick/pct
-----28000/prc
-----710BE/cd
-----Blusa_Maverick_Salmon_Mujer/dsc
-----null/url
+<Category>
+    <Name>Moda</Name>
+    <Description>Seccion_de_Moda</Description>
+    <Code>8021</Code>
+    <Category>
+        <Name>RopaHombre</Name>
+        <Description>Ropa_Hombres</Description>
+        <Code>4619</Code>
+        <Category>
+            <Name>Shorts</Name>
+            <Description>Shorts_Hombre</Description>
+            <Code>3710</Code>
+            <Category>
+                <Name>JeanShorts</Name>
+                <Description>JeanShorts_Hombre</Description>
+                <Code>1739</Code>
+                <Product>
+                    <Name>BlueJeanShorts</Name>
+                    <Description>BlueJeanShorts_Ripped</Description>
+                    <Code>8045</Code>
+                    <Price>22000</Price>
+                    <Url></Url>
+                </Product>
+            </Category>
+            <Product>
+                <Name>AlohaShorts</Name>
+                <Description>Shorts_Aloha_Patron_Flora</Description>
+                <Code>2795</Code>
+                <Price>19900</Price>
+                <Url></Url>
+            </Product>
+            <Product>
+                <Name>ShortMadim</Name>
+                <Description>Madim_Shorts_Bolsillos</Description>
+                <Code>0188</Code>
+                <Price>24900</Price>
+                <Url></Url>
+            </Product>
+        </Category>
+        <Category>
+            <Name>PoloShirts</Name>
+            <Description>Polo_Hombre</Description>
+            <Code>1739</Code>
+            <Product>
+                <Name>Polo_Hombre</Name>
+                <Description>PoloColores_Hombre</Description>
+                <Code>1087</Code>
+                <Price>28990</Price>
+                <Url></Url>
+            </Product>
+        </Category>
+    </Category>
+    <Category>
+        <Name>RopaMujer</Name>
+        <Description>Ropa_Mujeres</Description>
+        <Code>5684</Code>
+        <Category>
+            <Name>BlusasMujer</Name>
+            <Description>Blusas_Mujeres</Description>
+            <Code>7058</Code>
+            <Product>
+                <Name>BlusaMaverick</Name>
+                <Description>Blusa_Maverick_Salmon_Botones</Description>
+                <Code>1087</Code>
+                <Price>24990</Price>
+                 <Url></Url>
+            </Product>
+        </Category>
+    </Category>
+</Category>
 

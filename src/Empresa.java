@@ -10,72 +10,63 @@ public class Empresa {
     public Empresa(String name, String nit) {
         this.name = name;
         this.nit = nit;
-        System.out.println(countTabs("--"));
         try {
             File file = new File("src/records.txt");
             Scanner input = new Scanner(file);
-            Categoria aux = new Categoria();
-            aux=crearProductos(input, aux, 0);
-            categorias.stream();
+            categorias=crearProductos(input, new Categoria());
         } catch (Exception ex) {
-            ex.printStackTrace();
+
+        }
+        System.out.println(categorias.size());
+
+    }
+
+    private ArrayList<Categoria> crearProductos(Scanner scanner, Node<?> parent) {
+        String line = scanner.nextLine();
+
+        if(line.contains("<Category>")){
+            Categoria auxCat = new Categoria();
+            ((Categoria) parent).subCategorias.add(auxCat);
+            auxCat.parent = parent;
+            return crearProductos(scanner, auxCat);
+        }
+        else if(line.contains("</Category>")){
+            return crearProductos(scanner, (Categoria) parent.parent);
+        }
+        else if(line.contains("<Product>")){
+            Producto auxProd = new Producto();
+            ((Categoria) parent).productos.add(auxProd);
+            auxProd.parent = parent;
+            return crearProductos(scanner,  auxProd);
+        }
+        else if(line.contains("</Product>")){
+            return crearProductos(scanner, (Categoria) parent.parent);
+        }
+        else if(line.contains("<Name>")){
+            parent.name = readText(line);
+            return crearProductos(scanner, parent);
+        }
+        else if(line.contains("<Description>")){
+            parent.desc = readText(line);
+            return crearProductos(scanner, parent);
+        }
+        else if(line.contains("<Code>")){
+            parent.code = readText(line);
+            return crearProductos(scanner, parent);
+        }
+        else if(line.contains("<Price>")){
+            ((Producto)parent).price = Double.parseDouble(readText(line));
+            return crearProductos(scanner, parent);
+        }
+        else if(line.contains("<Url>")){
+            return crearProductos(scanner, parent);
+        }
+        else {
+            return ((Categoria) parent).subCategorias;
         }
     }
 
-    private Categoria crearProductos(Scanner scanner, Categoria parent, int tabs) {
-        if(scanner.hasNextLine()){
-            String nextLine = scanner.nextLine();
-            System.out.println(nextLine);
-
-            if(nextLine.endsWith("/pct")){
-                if(countTabs(nextLine)<=tabs) {
-                    for (int i = tabs; i>=countTabs(nextLine); i--) {
-                        parent = parent.parent;
-                    }
-                }
-                parent.productos.add(new Producto(parent, nextLine.split("/")[0].replaceAll("-", ""),
-                        Double.parseDouble(scanner.nextLine().split("/")[0].replaceAll("-", "")),
-                        scanner.nextLine().split("/")[0].replaceAll("-", ""),
-                        scanner.nextLine().split("/")[0].replaceAll("-", ""),
-                        scanner.nextLine().split("/")[0].replaceAll("-", ""),
-                        countTabs(nextLine)));
-                return crearProductos(scanner, parent, parent.tabs);
-            }
-            if(nextLine.endsWith("/ctg")){
-                Categoria aux = new Categoria();
-                aux.name = nextLine.split("/")[0].replaceAll("-", "");
-                aux.code = scanner.nextLine().split("/")[0].replaceAll("-", "");
-                aux.desc = scanner.nextLine().split("/")[0].replaceAll("-", "");
-                aux.parent = parent;
-                parent.subCategorias.add(aux);
-                crearProductos(scanner ,aux, countTabs(nextLine));
-                return crearProductos(scanner, parent, tabs);
-            }
-            else if(nextLine.endsWith(".ctg")){
-                Categoria aux = new Categoria();
-                aux.name = nextLine.trim();
-                aux.code = scanner.nextLine().trim();
-                aux.desc = scanner.nextLine().trim();
-                if(countTabs(nextLine)<=tabs) {
-                    aux.parent = parent;
-
-                    categorias.add(aux);
-                }
-                crearProductos(scanner,aux, countTabs(nextLine));
-            }
-
-
-        }
-        return null;
-    }
-
-    private int countTabs(String str) {
-        int count = 0;
-        for (int i = 0; i < str.length(); i++) {
-            if (str.charAt(i) == '-') {
-                count++;
-            }
-        }
-        return count;
+    private String readText(String line) {
+        return line.split(">")[1].split("<")[0];
     }
 }
