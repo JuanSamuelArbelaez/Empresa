@@ -4,18 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7440a131-4982-4f53-ac1e-7595aac7bf50" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Empresa.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Categoria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Empresa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Producto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/records" afterDir="false" />
+    <list default="true" id="7440a131-4982-4f53-ac1e-7595aac7bf50" name="Changes" comment="Initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Categoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Categoria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Empresa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/records.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/records.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +24,25 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="c279d31d-d0e6-4871-a069-0965dfbbf353" />
+        <option name="url" value="https://github.com/JuanSamuelArbelaez/Empresa" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -63,21 +75,60 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676913836084</updated>
-      <workItem from="1676913837652" duration="11608000" />
+      <workItem from="1676913837652" duration="19447000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1676943353391</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676943353391</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial commit">
+      <created>1676943371920</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676943371920</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Empresa.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="2" />
+          <line>14</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Empresa.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NumberFormatException" package="java.lang" />
+          <option name="timeStamp" value="10" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
