@@ -1,0 +1,37 @@
+Moda.ctg
+    617C7.cd
+    Seccion de Ropa.dsc
+    Hombre.ctg
+        0FA98.cd
+        Moda para Hombre.dsc
+        Short.ctg
+            5018B.cd
+            Shorts para Hombre.dsc
+            ShortAloha.pct
+                19990.prc
+                01F32.cd
+                Short Aloha Hombre Patron Floral.dsc
+                null.url
+            ShortMadim.pct
+                25200.prc
+                0D2A1.cd
+                Short Madim Verde Hombre Con Bolsillos.dsc
+                null.url
+        Camisa.ctg
+            61AC8.cd
+            Camisas para Hombre.dsc
+            PoloClassic.pct
+                24990.prc
+                71BA1.cd
+                Camisa Polo Clasica.dsc
+                null.url
+    Mujer.ctg
+        90A8C.cd
+        Moda para Mujer.dsc
+        Blusa.ctg
+            A810B.cd
+            Blusas para Mujer.dsc
+            BlusaMaverick.pct
+                28000.prc
+                710BE.cd
+                Blusa Maverick Salmon Mujer.dsc
