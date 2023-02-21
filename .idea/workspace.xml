@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7440a131-4982-4f53-ac1e-7595aac7bf50" name="Changes" comment="Changes to Data Strucuture creation config">
-      <change afterPath="$PROJECT_DIR$/src/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Categoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Categoria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Empresa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Producto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/records.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/records.txt" afterDir="false" />
-    </list>
+    <list default="true" id="7440a131-4982-4f53-ac1e-7595aac7bf50" name="Changes" comment="crearProductos function overhaul" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,7 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676913836084</updated>
-      <workItem from="1676913837652" duration="29900000" />
+      <workItem from="1676913837652" duration="30248000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1676943353391</created>
@@ -123,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676951211310</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="crearProductos function overhaul">
+      <created>1676961537511</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1676961537511</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,7 +133,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -144,7 +155,8 @@
     <MESSAGE value="Modification on Data Structure creation config" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Changes to Data Strucuture creation config" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes to Data Strucuture creation config" />
+    <MESSAGE value="crearProductos function overhaul" />
+    <option name="LAST_COMMIT_MESSAGE" value="crearProductos function overhaul" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -155,17 +167,7 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Empresa.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Empresa.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="49" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Empresa.java</url>
-          <line>64</line>
+          <line>63</line>
           <option name="timeStamp" value="50" />
         </line-breakpoint>
       </breakpoints>
