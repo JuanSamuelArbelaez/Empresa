@@ -21,7 +21,7 @@ public class Business {
         printProducts(0, products);
         products.clear();
 
-        Double min=0.0, max=22000.0;
+        double min=0.0, max=22000.0;
         System.out.println("Todos los productos con precio entre "+min+" y "+max+": \n--------------------------------------------------------");
         products=getProducts_PriceRange(min, max,0, new ArrayList<>());
         printProducts(0, products);
