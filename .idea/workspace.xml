@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7440a131-4982-4f53-ac1e-7595aac7bf50" name="Changes" comment="crearProductos function overhaul">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Empresa.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Business.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Categoria.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Business.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/records.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/records.txt" afterDir="false" />
-    </list>
+    <list default="true" id="7440a131-4982-4f53-ac1e-7595aac7bf50" name="Changes" comment="Code polish and added functionalities" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,6 +18,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIEW_PUSH_PROTECTED_ONLY" value="true" />
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="PUSH_TAGS">
       <GitPushTagMode>
@@ -111,7 +101,7 @@
       <updated>1676913836084</updated>
       <workItem from="1676913837652" duration="30720000" />
       <workItem from="1676988128413" duration="348000" />
-      <workItem from="1676988626933" duration="33081000" />
+      <workItem from="1676988626933" duration="33388000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1676943353391</created>
@@ -169,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676962016068</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Code polish and added functionalities">
+      <created>1677042428152</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1677042428152</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,7 +200,8 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Changes to Data Strucuture creation config" />
     <MESSAGE value="crearProductos function overhaul" />
-    <option name="LAST_COMMIT_MESSAGE" value="crearProductos function overhaul" />
+    <MESSAGE value="Code polish and added functionalities" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code polish and added functionalities" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

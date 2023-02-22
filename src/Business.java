@@ -14,7 +14,7 @@ public class Business {
         System.out.println(products.size());
         products.clear();
 
-        products=findProducts_Category(0, new ArrayList<>());
+        products=findProducts_Category(0, new ArrayList<>(), "RopaHombre");
         System.out.println(products.size());
         products.clear();
 
@@ -32,14 +32,14 @@ public class Business {
         return products;
     }
 
-    private ArrayList<Product> findProducts_Category(int count, ArrayList<Product> products) {
+    private ArrayList<Product> findProducts_Category(int count, ArrayList<Product> products, String catName) {
         if(count< this.categories.size()) {
             Category auxCat = this.categories.get(count);
             try {
-                Category aux2 =new Category().findCategory_Name(auxCat, "RopaHombre");
+                Category aux2 =new Category().findCategory_Name(auxCat, catName);
                 aux2.getProducts(products);
             }catch(Exception e) {
-                findProducts_Category(count+1, products);
+                findProducts_Category(count+1, products, catName);
             }
         }
         return products;
@@ -106,5 +106,4 @@ public class Business {
     private String readText(String line) {
         return line.split(">")[1].split("<")[0];
     }
-
 }
