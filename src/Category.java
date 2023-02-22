@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 
 public class Category extends Node {
-    public ArrayList<Product> products = new  ArrayList<Product>();
-    public ArrayList<Category> subCategories = new ArrayList<Category>();
+    public ArrayList<Product> products = new  ArrayList<>();
+    public ArrayList<Category> subCategories = new ArrayList<>();
     public ArrayList<Product> getProducts(ArrayList<Product> products) {
         products.addAll(this.products);
         for(Category auxCategory :this.subCategories){
@@ -16,14 +16,12 @@ public class Category extends Node {
         }
         return addProduct_InRange(min, max, products);
     }
-
     private ArrayList<Product> addProduct_InRange(double min, double max, ArrayList<Product> products) {
         for(Product product:this.products){
             if(product.priceInRange(min, max)) products.add(product);
         }
         return products;
     }
-
     public Category findCategory_Name(Category cat, String name){
         Category auxCat=null;
         if(cat.name.equalsIgnoreCase(name)) auxCat=cat;

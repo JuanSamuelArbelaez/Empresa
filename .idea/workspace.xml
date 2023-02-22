@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7440a131-4982-4f53-ac1e-7595aac7bf50" name="Changes" comment="Code polish and added functionalities" />
+    <list default="true" id="7440a131-4982-4f53-ac1e-7595aac7bf50" name="Changes" comment="Code polish">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Category.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +104,7 @@
       <updated>1676913836084</updated>
       <workItem from="1676913837652" duration="30720000" />
       <workItem from="1676988128413" duration="348000" />
-      <workItem from="1676988626933" duration="33388000" />
+      <workItem from="1676988626933" duration="34418000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1676943353391</created>
@@ -166,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677042428152</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Code polish">
+      <created>1677042910023</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1677042910023</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,7 +211,8 @@
     <MESSAGE value="Changes to Data Strucuture creation config" />
     <MESSAGE value="crearProductos function overhaul" />
     <MESSAGE value="Code polish and added functionalities" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code polish and added functionalities" />
+    <MESSAGE value="Code polish" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code polish" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

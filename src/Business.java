@@ -22,7 +22,6 @@ public class Business {
         System.out.println(products.size());
         products.clear();
     }
-
     private ArrayList<Product> getProducts_PriceRange(double min, double max, int count, ArrayList<Product> products) {
         if(count<this.categories.size()){
             Category auxCat = this.categories.get(count);
