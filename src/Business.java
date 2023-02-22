@@ -11,15 +11,20 @@ public class Business {
         this.nit = nit;
         createTree();
         ArrayList<Product> products=getProducts(0, new ArrayList<>());
-        System.out.println(products.size());
+        System.out.println("Todos los productos: \n--------------------------------------------------------");
+        printProducts(0, products);
         products.clear();
 
-        products=findProducts_Category(0, new ArrayList<>(), "RopaHombre");
-        System.out.println(products.size());
+        String catName = "RopaHombre";
+        System.out.println("Todos los productos de categoría '"+catName+"': \n--------------------------------------------------------");
+        products=findProducts_Category(0, new ArrayList<>(), catName);
+        printProducts(0, products);
         products.clear();
 
-        products=getProducts_PriceRange(0, 22000,0, new ArrayList<Product>());
-        System.out.println(products.size());
+        Double min=0.0, max=22000.0;
+        System.out.println("Todos los productos con precio entre "+min+" y "+max+": \n--------------------------------------------------------");
+        products=getProducts_PriceRange(min, max,0, new ArrayList<>());
+        printProducts(0, products);
         products.clear();
     }
     private ArrayList<Product> getProducts_PriceRange(double min, double max, int count, ArrayList<Product> products) {
@@ -30,7 +35,6 @@ public class Business {
         }
         return products;
     }
-
     private ArrayList<Product> findProducts_Category(int count, ArrayList<Product> products, String catName) {
         if(count< this.categories.size()) {
             Category auxCat = this.categories.get(count);
@@ -43,7 +47,7 @@ public class Business {
         }
         return products;
     }
-    private ArrayList<Product> getProducts(int count,ArrayList<Product> products){ //Devuelve todos los productos
+    private ArrayList<Product> getProducts(int count,ArrayList<Product> products){
         if(count<this.categories.size()){
             Category auxCat = this.categories.get(count);
             auxCat.getProducts(products);
@@ -99,10 +103,17 @@ public class Business {
             Scanner input = new Scanner(file);
             categories = createCategories(input, new Category());
         } catch (Exception ex) {
+            System.out.println("File Sintax Error");
         }
     }
-
     private String readText(String line) {
         return line.split(">")[1].split("<")[0];
+    }
+    private void printProducts(int count, ArrayList<Product> products) {
+        if(count<products.size()) {
+            Product auxProduct = products.get(count);
+            auxProduct.printProduct();
+            printProducts(count+1, products);
+        }
     }
 }
