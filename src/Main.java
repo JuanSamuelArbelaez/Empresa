@@ -1,5 +1,5 @@
 public class Main {
     public static void main(String[] args) {
-        Empresa triunfo = new Empresa("Triunfo", "19.31.70");
+        Business triunfo = new Business("Triunfo", "19.31.70");
     }
 }

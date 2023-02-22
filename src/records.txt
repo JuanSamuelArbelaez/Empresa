@@ -68,4 +68,16 @@
         </Category>
     </Category>
 </Category>
+<Category>
+    <Name>Bombillos</Name>
+        <Description>Bombillos_Genericos</Description>
+        <Code>8912</Code>
+        <Product>
+            <Name>BombilloLED</Name>
+            <Description>BombilloLED_1200hr</Description>
+            <Code>0361</Code>
+            <Price>12050</Price>
+             <Url></Url>
+        </Product>
+</Category>
 
